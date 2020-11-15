@@ -1,0 +1,163 @@
+@import "./reset";
+@import "./variable";
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  margin: 22px 20px;
+  font-size: 17px;
+}
+
+h1:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+h1:hover span {
+  opacity: 1;
+}
+
+h1 span {
+  opacity: 0.6;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav li {
+  margin-right: 20px;
+  font-weight: 300;
+}
+
+.nav li:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+  grid-template-rows: repeat(7, 0.2fr);
+  column-gap: 2vh;
+  row-gap: 8vh;
+  margin-right: 2vh;
+  margin-top: 60px;
+}
+
+.item:nth-child(1),
+.item:nth-child(3) {
+  grid-column: 2 / 3;
+  margin-left: 5px;
+}
+
+.item:nth-child(5) {
+  grid-column: 2 / 3;
+  margin-left: 5px;
+}
+
+.item:nth-child(7) {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  margin-left: 5px;
+}
+
+.item:nth-child(8) {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+}
+
+.item:nth-child(9) {
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+}
+
+.item:nth-child(10) {
+  grid-column: 3 / 4;
+  grid-row: 5 / 6;
+}
+
+.item:nth-child(11) {
+  grid-column: 2 / 3;
+  margin-left: 5px;
+}
+
+.item .item__img {
+  background-image: url(https://source.unsplash.com/random/800x600);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 80vh;
+}
+
+.item:nth-child(2) .item__img,
+.item:nth-child(3) .item__img {
+  height: 110vh;
+}
+
+.item:nth-child(5) .item__img {
+  height: 40vh;
+}
+
+.item:nth-child(6) .item__img {
+  height: 60vh;
+}
+
+.item:nth-child(7) .item__name {
+  font-weight: 300;
+}
+
+.item:nth-child(7) .item__content {
+  width: 64%;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.item:nth-child(8) .item__img {
+  height: 30vh;
+  margin-top: 3vh;
+  font-size: 18px;
+}
+
+.item:nth-child(9) .item__img {
+  height: 70vh;
+}
+
+.item:nth-child(10) .item__img {
+  height: 110vh;
+}
+
+.item:nth-child(11) .item__img {
+  height: 50vh;
+}
+
+.item:nth-child(12) .item__img {
+  height: 60vh;
+}
+
+.item {
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.item p {
+  margin-top: 1.5vh;
+}
+
+.item:hover .item__name {
+  color: blue;
+}
